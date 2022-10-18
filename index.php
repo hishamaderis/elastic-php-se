@@ -51,7 +51,8 @@ if(isset($_GET['q'])) {
 			foreach($results as $r) {
 		?>
 			<div class="result">
-				<a href="#<?php echo $r['_id']; ?>"><?php echo $r['_source']['title'];?></a>
+				<!-- <a href="#<?php echo $r['_id']; ?>"><?php echo $r['_source']['title'];?></a> -->
+				<div class="title"><?php echo $r['_source']['title']; ?></div>
 				<div class="year"><?php echo $r['_source']['year']; ?></div>
 				<div class="synopsis"><?php echo implode(', ', $r['_source']['synopsis']); ?></div>
 				<br>
