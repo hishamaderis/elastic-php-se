@@ -7,6 +7,6 @@ Simple search engine using elasticsearch and php
 3. Update the credentials in config.php
 4. Copy the http_ca.crt from elasticsearch into this directory
 5. Run a php docker instance with this directory mounted to /var/www/html
-6. Start the built in web server inside php container
+6. Start the built in web server inside php container: php -S 0.0.0.0:8000
 7. Run add.php to add new data into elastisearch
 8. Run index.php to search for the added data
